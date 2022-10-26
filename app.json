@@ -23,7 +23,7 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "with-rn-bluetooth-classic"
+      "react-native-ble-manager"
     ]
   }
 }

@@ -1,1 +1,1 @@
-include ':react-native-bluetooth-serial' project(':react-native-bluetooth-serial').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bluetooth-serial/android')
+include ':with-rn-bluetooth-classic' project(':with-rn-bluetooth-classic').projectDir = new File(rootProject.projectDir, '../node_modules/with-rn-bluetooth-classic/android')

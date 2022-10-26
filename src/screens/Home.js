@@ -1,35 +1,16 @@
 import React, {useState} from "react";
 import { View, Linking, TouchableOpacity } from "react-native";
-// import { Ionicons } from '@expo/vector-icons';
-// import { MaterialCommunityIcons } from '@expo/vector-icons';
-// import { getAuth, signOut } from "firebase/auth";
-
-// implementacion bluetooth 
-
-import RNBluetoothClassic, {
-  BluetoothDevice
-} from 'react-native-bluetooth-classic';
-
-
 import { Layout, Text, useTheme,} from "react-native-rapi-ui";
+import BLE from "react-native-ble-manager";
 
 export default function ({ navigation }) {
-  // const { isDarkmode, setTheme } = useTheme();
-  // const auth = null //getAuth();
-  const [data, setData] = useState("")
+  
+  const [enable, setEnable] = useState({enable: false})
 
-
-  const TestConnection = async () => {
-    console.log('A');
-    try {
-      var a = RNBluetoothClassic.isBluetoothEnabled();
-      console.warn(a)
-      // setData({ available });
-      // console.log(data);
-    } catch (err) {
-      // Handle accordingly
-    }
-
+  const TestConnection = () => {
+    console.log("aqui toy")
+    console.log(BLE.enableBluetooth)
+    BLE.enableBluetooth().then(() => console.log("enable")).catch(err => console.log(err))
   }
   return (
     

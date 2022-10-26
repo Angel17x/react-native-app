@@ -1,1 +1,1 @@
-compile project(':react-native-bluetooth-serial')
+compile project(':with-rn-bluetooth-classic')
