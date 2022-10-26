@@ -127,8 +127,8 @@ export default () => {
   return (
     <NavigationContainer>
       {/* {user == null && <Loading />} */}
-      {/* {<Main />} */}
-      <Text>Angel marico triste</Text>
+      {<Home />}
+      {/* <Text>Angel marico triste</Text> */}
       {/* {<Auth />} */} 
     </NavigationContainer>
   );
